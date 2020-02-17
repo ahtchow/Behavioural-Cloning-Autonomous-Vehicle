@@ -1,8 +1,4 @@
-# Behavioral Cloning Project
-
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
-
-O# **Behavioral Cloning** 
+# **Behavioral Cloning** 
 ---
 
 **Behavioral Cloning Project**
@@ -51,8 +47,8 @@ My model was derived from NVIDIA's neural network as seen below and referenced f
 
 Now here the CNN that was used in this project.
 
-![alt text](nn.svg)
-![alt text](model.png)
+![alt text](IMG_for_README/nn.png)
+![alt text](IMG_for_README/model.png)
 
 
 
@@ -80,7 +76,7 @@ Data Augmention techniques included:
 
 Images:
 
-![alt text](augmentaion.png)
+![alt text](IMG_for_README/augmentaion.png)
 
 These technique helped the model generalize to new data.
 
@@ -96,11 +92,11 @@ The model was trained using a image generator which produced training and valida
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road. It was import to view the distribution of the steering measurements collected. Here is the total data after training.
 
-![alt text](datadistribution.png)
+![alt text](IMG_for_README/datadistribution.png)
 
 I noticed the model would favor center-lane driving too much. As a result, around 80% of the straight driving data was ignored. This was necessary or else the model would second guess turning after only training on major of straight driving data. 
 
 Thus the final dataset: 
 
-![alt text](datadistributionafter.png)
+![alt text](IMG_for_README/datadistributionafter.png)
 
