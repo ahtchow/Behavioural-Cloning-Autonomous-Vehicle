@@ -2,6 +2,10 @@
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
+![g](IMG_for_README/gif.gif)
+
+Here is a sample of the drive taken from this project. [Youtube Link](https://youtu.be/99drYPl_Fdw)
+
 ---
 **Behavioral Cloning Project**
 
@@ -27,11 +31,9 @@ My project includes the following files:
 | drive.py  | communicate with simulator and use saved model to predict steering angle  |
 | drivePOV.mp4  | saved video of simulation run  |
 
-Here is a sample of the drive taken from this project. [Youtube Link](https://youtu.be/99drYPl_Fdw)
-
 
 #### 2. Submission includes functional code
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
+Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing
 ```sh
 python drive.py model.h5
 ```
@@ -58,7 +60,7 @@ Now here the CNN that was used in this project.
 The two architectures are relatively similar, with an addition to changes in filter sizes, an additional dropout layer and modifications to the dense layers.
 
 
-The model includes ELU layers to introduce nonlinearity and the data is normalized in the model using a Keras by dividing each pixel value by 255. 
+The model includes ELU layers to introduce nonlinearity and the data is normalized in the model using a Keras by dividing each pixel value by 255.
 
 #### 2. Reducing Overfitting / Data Collection / Data Augmentation
 
@@ -97,9 +99,8 @@ Training data was chosen to keep the vehicle driving on the road. I used a combi
 
 ![alt text](IMG_for_README/datadistribution.png)
 
-I noticed the model would favor center-lane driving too much. As a result, around 80% of the straight driving data was ignored. This was necessary or else the model would second guess turning after only training on major of straight driving data. 
+I noticed the model would favor center-lane driving too much. As a result, around 80% of the straight driving data was ignored. This was necessary or else the model would second guess turning after only training on major of straight driving data.
 
-Thus the final dataset: 
+Thus the final dataset:
 
 ![alt text](IMG_for_README/datadistributionafter.png)
-
